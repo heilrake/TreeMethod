@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import r2_score
 
+url = 'https://raw.githubusercontent.com/heilrake/TreeMethod/main/Data/train_logistic.csv'
 data = pd.read_csv(url, usecols=['tmax', 'tmin', 'tavg', 'wetbulb', 'heat', 'cool', 'sealevel',
                                   'station_number', 'store_nbr', 'item_nbr', 'stnpressure', 'resultspeed',
                                   'sunrise', 'sunset', 'depart', 'dewpoint', 'units'])
